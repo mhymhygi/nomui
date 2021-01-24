@@ -2,14 +2,16 @@
     >.nom-field-content {
 
         >.nom-list {
-            margin: -.5rem -.5rem;
+            >.nom-list-wrapper {
+                margin: -.5rem -.5rem;
 
-            >.nom-list-item-wrapper {
-                padding: .5rem .5rem;
+                >.nom-list-item-wrapper {
+                    padding: .5rem .5rem;
+                }
             }
         }
 
-        >.nom-list>.nom-list-item-wrapper>label {
+        >.nom-list>.nom-list-wrapper>.nom-list-item-wrapper>label {
             display: inline-flex;
             padding-top: @padding-y-base;
             padding-bottom: @padding-y-base;
@@ -53,36 +55,38 @@
 .nom-radio-list.p-uistyle-button {
     >.nom-field-content {
         >.nom-list {
-            display: inline-flex;
+            >.nom-list-wrapper {
+                display: inline-flex;
 
-            >.nom-list-item-wrapper {
-                >label {
-                    position: relative;
-                    display: inline-flex;
-                    margin-left: -1px;
-                    padding-top: @padding-y-base;
-                    padding-right: @padding-x-base;
-                    padding-bottom: @padding-y-base;
-                    padding-left: @padding-x-base;
-                    font-size: 1rem;
-                    line-height: @line-height-base;
-                    border: 1px solid #d9d9d9;
-                    cursor: pointer;
-                    transition: all 0.3s;
-                }
+                >.nom-list-item-wrapper {
+                    >label {
+                        position: relative;
+                        display: inline-flex;
+                        margin-left: -1px;
+                        padding-top: @padding-y-base;
+                        padding-right: @padding-x-base;
+                        padding-bottom: @padding-y-base;
+                        padding-left: @padding-x-base;
+                        font-size: 1rem;
+                        line-height: @line-height-base;
+                        border: 1px solid #d9d9d9;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                    }
 
-                &:first-child>label {
-                    border-left: 1px solid #d9d9d9;
-                    border-radius: 4px 0 0 4px;
-                }
+                    &:first-child>label {
+                        border-left: 1px solid #d9d9d9;
+                        border-radius: 4px 0 0 4px;
+                    }
 
-                &:last-child>label {
-                    border-radius: 0 4px 4px 0;
-                }
+                    &:last-child>label {
+                        border-radius: 0 4px 4px 0;
+                    }
 
-                >label.s-selected {
-                    color: @primary;
-                    border-color: @primary;
+                    >label.s-selected {
+                        color: @primary;
+                        border-color: @primary;
+                    }
                 }
             }
         }

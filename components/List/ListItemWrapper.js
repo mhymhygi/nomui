@@ -13,7 +13,8 @@ class ListItemWrapper extends Component {
 
   _created() {
     this._propStyleClasses = ['span']
-    this.list = this.parent
+    this.listWrapper = this.parent
+    this.list = this.parent.parent
   }
 
   _config() {
