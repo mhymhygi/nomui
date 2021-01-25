@@ -17,6 +17,7 @@ class Field extends Component {
       flatValue: false,
       span: null,
       notShowLabel: false,
+      rules: [],
     }
 
     super(Component.extendProps(defaults, props), ...mixins)
@@ -51,8 +52,8 @@ class Field extends Component {
     if (span) {
       this.setProps({
         styles: {
-          col: span
-        }
+          col: span,
+        },
       })
     }
 
