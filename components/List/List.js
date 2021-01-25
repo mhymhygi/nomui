@@ -1,7 +1,7 @@
 import Component from '../Component/index'
 import { extend, isFunction } from '../util/index'
+import ListContent from './ListContent'
 import ListItemWrapper from './ListItemWrapper'
-import ListWrapper from './ListWrapper'
 
 class List extends Component {
   constructor(props, ...mixins) {
@@ -30,7 +30,7 @@ class List extends Component {
     this._addPropStyle('gutter', 'line', 'align', 'justify', 'cols')
 
     this.setProps({
-      children: { component: ListWrapper }
+      children: { component: ListContent }
     })
   }
 

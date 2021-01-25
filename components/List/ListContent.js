@@ -1,7 +1,7 @@
 import Component from '../Component/index'
 import ListItemWrapper from './ListItemWrapper'
 
-class ListWrapper extends Component {
+class ListContent extends Component {
     constructor(props, ...mixins) {
         const defaults = {
             tag: 'ul',
@@ -41,6 +41,6 @@ class ListWrapper extends Component {
     }
 }
 
-Component.register(ListWrapper)
+Component.register(ListContent)
 
-export default ListWrapper
+export default ListContent
