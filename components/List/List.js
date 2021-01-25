@@ -27,7 +27,7 @@ class List extends Component {
   }
 
   _config() {
-    this._addPropStyle('gutter', 'line', 'align', 'justify', 'cols')
+    this._addPropStyle('gutter', 'line', 'align', 'justify', 'cols', 'inline')
 
     this.setProps({
       children: { component: ListContent }

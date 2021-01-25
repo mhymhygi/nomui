@@ -27,7 +27,6 @@ define([], function () {
                 component: 'RadioList',
                 options: [
                   { text: '自动', value: null },
-                  { text: '1 列', value: 1 },
                   { text: '2 列', value: 2 },
                   { text: '3 列', value: 3 },
                   { text: '4 列', value: 4 },

@@ -4,6 +4,7 @@ import List from '../List/index'
 class OptionList extends List {
   constructor(props, ...mixins) {
     const defaults = {
+      inline: true,
       itemDefaults: {
         tag: 'label',
         _config: function () {

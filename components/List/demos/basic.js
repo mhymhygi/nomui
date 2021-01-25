@@ -6,7 +6,6 @@ define([], function () {
         demo: function () {
             return {
                 component: 'List',
-                gutter: 'md',
                 items: [
                     { text: '飞狐外传' },
                     { text: '雪山飞狐' },

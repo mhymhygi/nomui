@@ -13,7 +13,8 @@ class TabList extends List {
       uistyle: 'plain',
       itemSelectable: {
         byClick: true,
-      }
+      },
+      inline: true,
     }
 
     super(Component.extendProps(defaults, props), ...mixins)
