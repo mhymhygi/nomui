@@ -12,7 +12,7 @@ class ListContent extends Component {
 
     _created() {
         this.list = this.parent
-        this.list.wrapper = this
+        this.list.content = this
     }
 
     _config() {

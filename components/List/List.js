@@ -131,7 +131,7 @@ class List extends Component {
 
   getAllItems() {
     const items = []
-    const children = this.getChildren()
+    const children = this.content.getChildren()
     for (let i = 0; i < children.length; i++) {
       const itemWrapper = children[i]
       items.push(itemWrapper.item)
@@ -149,7 +149,7 @@ class List extends Component {
 
   getSelectedItems() {
     const selectedItems = []
-    const children = this.getChildren()
+    const children = this.content.getChildren()
     for (let i = 0; i < children.length; i++) {
       const { item } = children[i]
       if (item.props.selected) {
