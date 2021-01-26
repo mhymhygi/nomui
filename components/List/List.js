@@ -9,6 +9,7 @@ class List extends Component {
       tag: 'div',
       items: [],
       itemDefaults: {},
+      data: null,
 
       selectedItems: null,
 
