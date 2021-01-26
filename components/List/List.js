@@ -17,6 +17,7 @@ class List extends Component {
         multiple: false,
         byClick: false,
       },
+      nowrap: false,
     }
 
     super(Component.extendProps(defaults, props), ...mixins)
